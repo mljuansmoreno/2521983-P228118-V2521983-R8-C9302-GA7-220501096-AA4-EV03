@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactuando con el componente Navbar</title>
+  <style>
+    /* Estilos para simular la apariencia del Navbar */
+    .navbar {
+      background-color: #f2f2f2;
+      padding: 10px;
+    }
+
+    .navbar__logo {
+      font-size: 20px;
+      font-weight: bold;
+      margin-right: 20px;
+    }
+
+    .navbar__menu {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .navbar__item {
+      display: inline-block;
+      margin-right: 10px;
+    }
+
+    .navbar__link {
+      text-decoration: none;
+      color: #333;
+      padding: 5px;
+    }
+
+    .navbar__link:hover {
+      background-color: #ddd;
+    }
+  </style>
+</head>
+<body>
+  <div id="navbar-root"></div>
+
+  <script src="https://unpkg.com/react/umd/react.production.min.js"></script>
+  <script src="https://unpkg.com/react-dom/umd/react-dom.production.min.js"></script>
+  <script>
+    // Componente Navbar
+    const Navbar = () => {
+      return (
+        <nav className="navbar">
+          <div className="navbar__logo">Logo de la tienda</div>
+          <ul className="navbar__menu">
+            <li className="navbar__item">
+              <a href="/" className="navbar__link">Inicio</a>
+            </li>
+            <li className="navbar__item">
+              <a href="/productos" className="navbar__link">Productos</a>
+            </li>
+            <li className="navbar__item">
+              <a href="/carrito" className="navbar__link">Carrito</a>
+            </li>
+            <li className="navbar__item">
+              <a href="/contacto" className="navbar__link">Contacto</a>
+            </li>
+          </ul>
+        </nav>
+      );
+    };
+
+    // Renderizar el componente Navbar en el elemento con id "navbar-root"
+    ReactDOM.render(<Navbar />, document.getElementById('navbar-root'));
+  </script>
+</body>
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactuando con el componente ProductList</title>
+  <style>
+    /* Estilos para simular la apariencia del ProductList */
+    .product-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .product-list__title {
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+
+    .product-list__item {
+      width: 200px;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    .product-list__image {
+      width: 100%;
+      height: auto;
+      margin-bottom: 10px;
+    }
+
+    .product-list__name {
+      font-size: 16px;
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+
+    .product-list__price {
+      font-size: 14px;
+      margin-bottom: 5px;
+    }
+
+    .product-list__button {
+      display: block;
+      width: 100%;
+      padding: 5px 10px;
+      background-color: #007bff;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div id="product-list-root"></div>
+
+  <script src="https://unpkg.com/react/umd/react.production.min.js"></script>
+  <script src="https://unpkg.com/react-dom/umd/react-dom.production.min.js"></script>
+  <script>
+    // Componente ProductList
+    const ProductList = ({ products }) => {
+      return (
+        <div className="product-list">
+          <h2 className="product-list__title">Productos disponibles</h2>
+          {products.map((product) => (
+            <div key={product.id} className="product-list__item">
+              <img src={product.image} alt={product.name} className="product-list__image" />
+              <h3 className="product-list__name">{product.name}</h3>
+              <p className="product-list__price">Precio: {product.price}</p>
+              <button className="product-list__button">Agregar al carrito</button>
+            </div>
+          ))}
+        </div>
+      );
+    };
+
+    // Datos de ejemplo para la lista de productos
+    const products = [
+      { id: 1, name: 'Bicicleta 1', price: 1000, image: 'https://example.com/bike1.jpg' },
+      { id: 2, name: 'Bicicleta 2', price: 2000, image: 'https://example.com/bike2.jpg' },
+      { id: 3, name: 'Bicicleta 3', price: 3000, image: 'https://example.com/bike3.jpg' },
+    ];
+
+    // Renderizar el componente ProductList en el elemento con id "product-list-root"
+    ReactDOM.render(<ProductList products={products} />, document.getElementById('product-list-root'));
+  </script>
+</body>
+</html>

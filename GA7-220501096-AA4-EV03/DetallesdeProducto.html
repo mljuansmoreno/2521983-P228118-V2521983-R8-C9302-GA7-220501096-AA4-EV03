@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactuando con el componente ProductDetails</title>
+  <style>
+    /* Estilos para simular la apariencia del ProductDetails */
+    .product-details {
+      display: flex;
+      gap: 20px;
+    }
+
+    .product-details__image-container {
+      flex: 0 0 300px;
+    }
+
+    .product-details__image {
+      width: 100%;
+      height: auto;
+    }
+
+    .product-details__info {
+      flex: 1;
+    }
+
+    .product-details__name {
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+
+    .product-details__description,
+    .product-details__features {
+      margin-bottom: 10px;
+    }
+
+    .product-details__price {
+      font-size: 16px;
+      margin-bottom: 10px;
+    }
+
+    .product-details__button {
+      display: block;
+      width: 200px;
+      padding: 10px;
+      background-color: #007bff;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div id="product-details-root"></div>
+
+  <script src="https://unpkg.com/react/umd/react.production.min.js"></script>
+  <script src="https://unpkg.com/react-dom/umd/react-dom.production.min.js"></script>
+  <script>
+    // Componente ProductDetails
+    const ProductDetails = ({ product, onAddToCart, onGoBack }) => {
+      return (
+        <div className="product-details">
+          <div className="product-details__image-container">
+            <img src={product.image} alt={product.name} className="product-details__image" />
+          </div>
+          <div className="product-details__info">
+            <h2 className="product-details__name">{product.name}</h2>
+            <p className="product-details__description">{product.description}</p>
+            <p className="product-details__features">{product.features}</p>
+            <p className="product-details__price">Precio: {product.price}</p>
+            <button className="product-details__button" onClick={onAddToCart}>
+              Agregar al carrito
+            </button>
+            <button className="product-details__button" onClick={onGoBack}>
+              Volver a la lista de productos
+            </button>
+          </div>
+        </div>
+      );
+    };
+
+    // Datos de ejemplo para el detalle de un producto
+    const product = {
+      id: 1,
+      name: 'Bicicleta Enduro',
+      description: 'Una bicicleta de alta gama para viajes largos de montaña.',
+      features: 'Características: suspensión dual, frenos de disco hidráulicos, cuadro de aluminio resistente.',
+      price: 2000,
+      image: 'https://example.com/bike.jpg'
+    };
+
+    // Función de ejemplo para agregar al carrito
+    const addToCart = () => {
+      console.log('Producto agregado al carrito');
+    };
+
+    // Función de ejemplo para volver a la lista de productos
+    const goBack = () => {
+      console.log('Volviendo a la lista de productos');
+    };
+
+    // Renderizar el componente ProductDetails en el contenedor 'product-details-root'
+    ReactDOM.render(
+      <ProductDetails
+        product={product}
+        onAddToCart={addToCart}
+        onGoBack={goBack}
+      />,
+      document.getElementById('product-details-root')
+    );
+  </script>
+</body>
+</html>

@@ -1,66 +1,49 @@
-# Evidencia  GA7-220501096-AA4-EV03 ficha / programa: 2521983-P228118-V2521983-R8-C9302
+# Enduro Bikes - eCommerce de Motocicletas
 
-¡Bienvenido al repositorio de la tienda online de Enduro Bikes! Aquí podrás explorar todos los detalles sobre esta aplicación web desarrollada con la potente tecnología de React. Permíteme guiarte a través de los aspectos clave de configuración, instalación y uso de esta increíble plataforma.
+![Enduro Bikes](enduroBikes.gif)
 
-## Características Destacadas
+¡Bienvenido a Enduro Bikes, el eCommerce especializado en motocicletas! Este proyecto forma parte de la evidencia GA7-220501096-AA4-EV03 del Tecnólogo de Análisis y Desarrollo de Software del SENA.
 
-- Explora y busca bicicletas de enduro disponibles en nuestro extenso catálogo.
-- Filtra las bicicletas según la marca, precio y características que más te interesen.
-- Sumérgete en los detalles de cada bicicleta, incluyendo especificaciones técnicas y una fascinante galería de imágenes.
-- Añade tus bicicletas favoritas al carrito de compras y realiza una compra sencilla y segura.
-- Disfruta de un proceso de pago fluido y seguro con diversos métodos de pago populares.
+## Descripción
 
-## Requisitos Previos
+Enduro Bikes es una plataforma de comercio electrónico diseñada para satisfacer todas tus necesidades relacionadas con motocicletas. Ya sea que estés buscando una motocicleta para uso diario, para competencias o simplemente para disfrutar de un paseo emocionante, Enduro Bikes tiene una amplia variedad de opciones para ti.
 
-Antes de comenzar la instalación de la tienda online de Enduro Bikes, asegúrate de tener los siguientes requisitos previos instalados en tu sistema:
+## Tecnologías Utilizadas
 
-- Node.js (versión 12 o superior)
-- Gestor de paquetes npm (incluido en la instalación de Node.js)
+Este proyecto ha sido desarrollado utilizando las siguientes tecnologías:
 
-## Instalación
+- React: Una biblioteca de JavaScript para construir interfaces de usuario interactivas.
+- HTML: El lenguaje de marcado estándar utilizado para crear la estructura de las páginas web.
+- CSS: El lenguaje utilizado para dar estilo y diseño a las páginas web.
+- JavaScript: El lenguaje de programación utilizado para agregar interactividad a las páginas web.
 
-Sigue los pasos a continuación para instalar y ejecutar la tienda online de Enduro Bikes en tu máquina local:
+## Características Principales
 
-1. Clona este repositorio en tu máquina local o descárgalo como archivo ZIP y descomprímelo.
-   ```
-   git clone https://github.com/mljuansmoreno/2521983-P228118-V2521983-R8-C9302-GA7-220501096-AA4-EV03.git
-   ```
+- Catálogo de motocicletas: Explora nuestro extenso catálogo de motocicletas disponibles. Encuentra información detallada sobre cada modelo, incluyendo especificaciones técnicas, imágenes y precios.
+- Carrito de compras: Agrega tus motocicletas favoritas al carrito de compras y gestiona tu pedido fácilmente.
+- Proceso de pago seguro: Utilizamos tecnologías de cifrado y seguridad avanzadas para garantizar que tu información personal y financiera esté protegida durante todo el proceso de pago.
+- Seguimiento de pedidos: Mantente al tanto del estado de tus pedidos. Recibe actualizaciones regulares sobre el proceso de envío y entrega de tus motocicletas.
+- Opciones de contacto: Si tienes alguna pregunta o necesitas asistencia adicional, nuestro equipo de atención al cliente está disponible para ayudarte. Puedes comunicarte con nosotros a través de nuestro formulario de contacto en línea o por teléfono.
 
-2. Abre una terminal y navega hasta el directorio raíz del proyecto.
-   ```
-   cd tienda-enduro-bikes
-   ```
+## Cómo Contribuir
 
-3. Ejecuta el siguiente comando para instalar todas las dependencias del proyecto.
-   ```
-   npm install
-   ```
+¡Nos encantaría recibir contribuciones para mejorar Enduro Bikes! Si deseas contribuir al proyecto, sigue estos pasos:
 
-4. Una vez que se hayan instalado todas las dependencias correctamente, utiliza el siguiente comando para iniciar la aplicación.
-   ```
-   npm start
-   ```
+1. Haz un fork de este repositorio y clona el fork en tu máquina local.
+2. Crea una rama con un nombre descriptivo para tu contribución.
+3. Realiza tus modificaciones y mejoras en la nueva rama.
+4. Realiza una solicitud de extracción (pull request) para que podamos revisar tus cambios.
 
-5. La aplicación se abrirá en tu navegador web predeterminado y podrás acceder a ella a través de la dirección [http://localhost:3000](http://localhost:3000). Si el puerto 3000 ya está en uso, se te ofrecerá la opción de seleccionar un puerto disponible.
+## Créditos
 
-## Configuración
+Este proyecto ha sido desarrollado por el Tecnólogo de Análisis y Desarrollo de Software del SENA como parte de la evidencia GA7-220501096-AA4-EV03. Siéntete libre de utilizar este proyecto como referencia o punto de partida para tus propios proyectos.
 
-La tienda online de Enduro Bikes está diseñada para funcionar con un backend encargado de gestionar el catálogo de bicicletas y el proceso de pago. Si deseas configurar la aplicación para que utilice tu propio backend, sigue los pasos que se detallan a continuación:
+## Licencia
 
-1. Abre el archivo `src/config.js` en un editor de texto.
+Este proyecto está bajo la Licencia MIT. Consulta el archivo [LICENSE](LICENSE) para obtener más información.
 
-2. Dentro de este archivo, encontrarás las siguientes variables de configuración:
+¡Gracias por visitar Enduro Bikes!
 
-   - `API_URL`: Esta variable representa la URL base de tu backend. Asegúrate de cambiarla por la URL correspondiente a tu propio backend.
+---
 
-3. Guarda los cambios realizados en el archivo `src/config.js`.
-
-## Contribución
-
-¡Nos emociona mucho que quieras contribuir a este proyecto! Si deseas aportar tus mejoras, sigue los pasos a continuación:
-
-1. Crea un fork de este repositorio en tu propia cuenta de GitHub.
-
-2. Clona tu fork en tu máquina local.
-   ```
-   git clone https://github.com/mljuansmoreno/2521983-P228118-V2521983-R8-C9302-GA7-220501096-AA4-EV03
+_Por favor, ten en cuenta que este proyecto es ficticio y el comercio electrónico Enduro Bikes no existe en la realidad. Esta es solo una descripción ficticia creada con fines educativos y de demostración._

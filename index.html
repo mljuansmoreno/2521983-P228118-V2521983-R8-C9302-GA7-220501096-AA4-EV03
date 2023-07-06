@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ecommerce - Bicicletas de Enduro</title>
+  <link rel="stylesheet" href="styles.css">
+  <!-- importar carrito.js -->
+  <script src="carrito.js" defer></script>
+</head>
+<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+<body>
+  <div id="root">
+
+  <header class="animate-charcter">
+    <h1>Enduro Bikes</h1>
+  </header>
+</div>
+  <main>
+
+    <div class="product-list">
+      <div class="product">
+        <img src="bici1.jpg" alt="Bicicleta Enduro 1">
+        <h3>Enduro Bike: Todoterreno</h3>
+        <p id="precio1">Precio: $5,450,999</p>
+  <button onclick="addToCart()">Agregar al carrito</button>
+      </div>
+      <br>
+      <br>
+
+      <div class="product">
+        <img src="bici2.jpg" alt="Bicicleta Enduro 2">
+        <h3>Enduro Bike: Extrema</h3>
+        <p id="precio2">Precio: $3,422,499</p>
+        <button onclick="addToCart()">Agregar al carrito</button>
+      </div>
+      <br>
+      <br>
+
+      <div class="product">
+        <img src="bici3.jpg" alt="Bicicleta Enduro 3">
+        <h3>Enduro Bike: Adventure</h3>
+        <p id="precio3">Precio: $2,999,998</p>
+        <button onclick="addToCart()">Agregar al carrito</button>
+      </div>
+
+
+    </div>
+  </main>
+  <br>
+  <br>
+
+  <footer>
+    <p>&copy; 2023 Juan Sebastián Moreno Díaz. ADSO SENA.</p>
+  </footer>
+
+  <!-- Importar la aplicación React -->
+  <script src="https://unpkg.com/react@latest/umd/react.development.js"></script>
+  <script src="https://unpkg.com/react-dom@latest/umd/react-dom.development.js"></script>
+
+  <!-- Importar el componente principal -->
+  <script src="main.js"></script>
+</body>
+</html>
